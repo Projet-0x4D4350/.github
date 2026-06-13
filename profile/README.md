@@ -1,39 +1,54 @@
 <div align="center">
 
-# 0x4D4350
+# `0x4D4350`
 
-### Vos agents IA. Vos données. Sous contrôle.
+### Le pare-feu entre vos agents IA et vos données.
 
-Une seule porte entre l'intelligence artificielle et vos systèmes.
-Rien ne passe sans permission.
+`4D 43 50` → `M C P` · *le protocole qu'on verrouille.*
+
+![statut](https://img.shields.io/badge/statut-en%20conception-f5a623?style=for-the-badge)
+![licence](https://img.shields.io/badge/licence-source--available-2d6cdf?style=for-the-badge)
+![MCP](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-111111?style=for-the-badge)
+![focus](https://img.shields.io/badge/sécurité-IA%20agentique-e5484d?style=for-the-badge)
 
 </div>
 
 ---
 
-## Le problème tient en une phrase.
+> ### On a donné à l'IA les clés de la maison. On a oublié de poser une serrure.
 
-On confie les clés de la maison à l'IA. Sans poser de serrure.
+Vos agents accèdent en direct à vos bases, vos mails, votre CRM. Trop de droits, aucune trace, aucun garde-fou. **Une seule instruction piégée suffit à tout faire fuir.**
 
-Bases de données. Mails. CRM. Fichiers. Un agent y accède aujourd'hui en direct — trop de droits, aucune trace, aucun garde-fou. Une seule instruction piégée suffit à tout faire fuir.
+`0x4D4350` se place entre les agents et vos systèmes. Tout passe par lui. Il décide. Il filtre. Il se souvient.
 
-## La gateway qui dit non.
+## Avant / après
 
-0x4D4350 s'installe entre vos agents et vos systèmes. Tout passe par elle. Elle décide. Elle filtre. Elle se souvient.
+| Sans `0x4D4350` | Avec `0x4D4350` |
+| :--- | :--- |
+| Accès total, par défaut | **Moindre privilège**, par défaut |
+| Les données fuient en silence | **Filtrées** avant de sortir |
+| Actions critiques sans contrôle | **Validation humaine** obligatoire |
+| Aucune trace en cas d'incident | **Tout** est journalisé |
 
-**Moindre privilège.**
-Chaque agent obtient l'accès strictement nécessaire. Rien de plus.
+## La politique tient en un fichier
 
-**Anti-fuite.**
-Les données sensibles sont filtrées avant de quitter vos murs.
+```yaml
+# policy.0x4D4350.yaml
+agent: support-bot
+allow:
+  - crm.read
+deny:
+  - "*.delete"
+require_human:     # feu vert humain obligatoire
+  - payments.*
+redact:            # filtré avant de quitter vos murs
+  - pii
+audit: full
+```
 
-**Validation humaine.**
-Les actions critiques attendent votre feu vert.
+Lisible. Versionnable. Auditable. Pas de magie noire.
 
-**Audit total.**
-Chaque appel est tracé. Rien n'échappe au journal.
-
-## Comment ça marche.
+## Sous le capot
 
 ```mermaid
 flowchart LR
@@ -46,18 +61,14 @@ flowchart LR
 
 Une seule voie. Toujours surveillée.
 
-## Pensé pour ceux qui protègent.
+## Pour qui
 
-Les équipes sécurité et infra qui déploient l'IA — sans jamais exposer leurs données.
+Les équipes **sécurité** et **infra** qui déploient l'IA — sans jamais exposer leurs données.
 
 ---
 
 <div align="center">
 
-**0x4D4350**
-
-« MCP » en hexadécimal. Le protocole que nous sécurisons.
-
-*En cours de conception.*
+**`0x4D4350`** · « MCP » en hexadécimal · *en cours de conception*
 
 </div>
